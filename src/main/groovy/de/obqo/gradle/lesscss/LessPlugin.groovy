@@ -37,10 +37,10 @@ class LessPlugin implements Plugin<Project> {
             rhino
         }
         project.repositories {
-            mavenCentral()
+            maven { url "https://repo1.maven.org/maven2/" }
         }
         project.dependencies {
-            rhino 'org.mozilla:rhino:1.7R4'
+            rhino 'org.mozilla:rhino:1.7.13'
         }
     }
 

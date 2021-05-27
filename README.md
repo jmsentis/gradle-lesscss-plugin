@@ -16,7 +16,7 @@ Add artifact for the plugin to your [Gradle](http://gradle.org) buildscript depe
 ```groovy
 buildscript {
     repositories {
-        mavenCentral()
+        maven { url "https://repo1.maven.org/maven2/" }
     }
     dependencies {
         classpath 'de.obqo.gradle:gradle-lesscss-plugin:1.0-1.3.3'

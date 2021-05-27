@@ -46,9 +46,10 @@ class LessTask extends DefaultTask {
     private static final String LESS_PATH_PREFIX = 'less-rhino-'
     private static final String LESS_PATH_SUFFIX = '.js'
     private static final List<String> LESS_VERSIONS = ['1.1.3', '1.1.5', '1.3.1', '1.3.2','1.3.3', '1.4.0']
-    private static final String LESS_DEFAULT_VERSION = LESS_VERSIONS[4]
+    private static final String LESS_DEFAULT_VERSION = LESS_VERSIONS[5]
     private static final String TMP_DIR = "tmp${File.separator}js"
 
+    @Input
     def source
 
     @InputFiles

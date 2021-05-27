@@ -87,7 +87,7 @@ class LessTaskTest extends Specification {
         def actual = getGenerated('style.css').readLines()
         def expected = getProvided("style.css").readLines()
         actual == expected
-        lesscss.getLessPath() == 'less-rhino-1.3.3.js'
+        lesscss.getLessPath() == 'less-rhino-1.4.0.js'
     }
 
     def 'run less with compress option'() {
